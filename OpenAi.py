@@ -3,7 +3,8 @@ import openai
 from dotenv import load_dotenv 
 load_dotenv()
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv(
+"OPENAI_API_KEY")
 
 start_sequence = "\nGus_bot:"
 restart_sequence = "\n\nUser:"

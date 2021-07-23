@@ -1,5 +1,6 @@
 import discord
 import os
+import keep_alive
 from discord.ext import commands
 import OpenAi
 intents = discord.Intents().all()
@@ -40,4 +41,5 @@ async def shutdown(context):
     exit()
 
 
+keep_alive.keep_alive()
 client.run(BOT_TOKEN)
