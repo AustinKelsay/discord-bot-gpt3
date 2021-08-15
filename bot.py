@@ -34,7 +34,6 @@ async def on_message(message):
         	f.write("%i\n" % it)
         f.close()
 
-
 @client.command()
 @commands.is_owner()
 async def shutdown(context):
